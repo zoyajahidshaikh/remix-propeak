@@ -1,0 +1,24 @@
+.btn-secondary {
+    color:#470000; 
+    background-color: #dddddd;
+    border-color: #dddddd;
+}
+.leave-total{
+    font-size: 22px
+}
+
+/* //*  */
+@media  (max-width:360px){
+    .leave-div {
+        max-width: 360px;
+    }
+}
+
+@media  (max-width:651px) and (min-width:361px){
+    .leave-div {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 767px) and (min-width:575px) { }
+

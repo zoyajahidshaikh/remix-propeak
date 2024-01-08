@@ -1,0 +1,66 @@
+
+.pagination {
+    display: inline-block;
+    /* font-size: 1em;
+    padding: 10px 0px; */
+    /* color: gray; */
+  }
+  .current-page {
+   background-color:#20daf1 !important;
+    color: #fff;
+    font-size: 16px;
+    line-height: 27px;
+  }
+    
+  .pagination-btn {
+    border-right: 1px solid #ffffff;
+    font-size: 14px;
+    background: #e4f3f5;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    cursor: pointer;
+  }
+
+  .pagination-btn.prev, .pagination-btn.next {
+    background: #eee;
+  }
+
+  .pagination-btn:focus {
+    outline: none;
+  }
+  .pagination-btn.next, .pagination-btn.prev {
+    color: black;
+  }
+  
+  .page-selector {
+    /*padding: 5px;*/
+    padding: 5px;
+    font-size: 13px;
+    color: #000;
+    letter-spacing: 0px;
+  }
+  
+  .total-records-text {
+    padding: 5px;
+    font-size: 13px;
+    color: #000;
+    letter-spacing: 0px;
+
+  }
+  .page-selector > input {
+    width: 51px;
+    height: 24px;
+    font-size: 14px;
+    margin-left: 3px;
+    margin-right: 5px;
+    border-radius: 4px;
+    border: 1px solid #EEE;
+    text-align: center;
+    padding: 2px;
+}
+    
+  .current-page-input {
+    width: 3em;
+    text-align: center;
+  }

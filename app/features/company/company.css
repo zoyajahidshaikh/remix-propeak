@@ -1,0 +1,104 @@
+
+  .company-list {
+         display: -webkit-flex;
+         display: flex;
+         -webkit-flex-direction: row;
+         flex-direction: row;
+         -webkit-align-items: center;
+         align-items: start;
+         -webkit-justify-content: center;
+         justify-content: start;
+         flex-wrap: wrap;
+      
+         /* background: #e4dccc;*/
+         background: #f8f9fb;
+          border: 1px solid #dbddde;
+          padding: 10px;
+          margin-top: 10px;
+          height: 65vh;
+          overflow-y: auto;
+              align-content: baseline;
+ }
+
+  
+.ccompany {
+    border: 1px solid #dee2e6;
+    width: 220px;
+    height: 77px;
+    /* border-radius: 50%; */
+    padding: 10px;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #fff;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.company-list-wrapper {
+    /* height: 70vh;
+    background: #e5ecec;
+    padding: 10px; */
+/* overflow-y: auto; */
+}
+.company-total {
+    font-size: 22px;
+}
+
+.company-name {
+    /* height: 27px; */
+    background: #cff4f9;
+    padding: 2px 10px;
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    /* cursor: pointer; */
+}
+
+
+@media (max-width : 480px) {
+     
+    .company-total {
+        font-size: 18px;
+    }
+
+}
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media (min-width : 320px) {
+        body {
+
+            /* background: cyan; */
+        }
+
+        .company {
+            width: 99%;
+        }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media (min-width : 480px) {
+        body {
+            
+            /* background: pink; */
+        }
+        .company {
+            width: 45%;
+        }
+
+    }
+
+
+ 
+
+

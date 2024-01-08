@@ -1,0 +1,151 @@
+/* .reportscrollbar{
+    overflow-x: hidden;
+    overflow-y: hidden;
+     width: auto;
+}
+
+.divStyle
+        {
+        margin-top: 17px
+    } */
+
+    .reportscrollbar{
+        width: 100%;
+        height: 100%;
+    }
+    
+  
+    .divStyle
+            {
+            margin-top: 17px
+        }
+    
+    
+
+
+    #report-container {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 10px;
+        width: 1200px;
+        height: 800px;
+        background-color: palegreen;
+      }
+  
+/* recharts */
+
+.recharts-wrapper {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    position: relative;
+    cursor: default;
+    width: 100% !important;
+    height: 100% !important;
+    flex-direction: column;
+  }
+  /* ul.recharts-default-legend {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+   */
+  .recharts-legend-wrapper {
+    position: relative !important;
+    width: auto !important;
+    height: auto !important;
+    bottom: 26px !important;
+    left: 3px !important;
+  }
+  /* 
+  svg.recharts-surface {
+  position: relative;
+  left: -88px;
+  top: 105px;
+  } */
+
+
+      /*  Radio button style  */
+
+
+
+      .input-container {
+          display: inline-block;
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          font-size: 15px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+      }
+
+      /* Hide the browser's default radio button */
+      .input-container input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+      }
+
+      /* Create a custom radio button */
+      .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 25px;
+          width: 25px;
+          background-color: #eee;
+          border-radius: 50%;
+      }
+
+      /* On mouse-over, add a grey background color */
+      .input-container:hover input~.checkmark {
+          background-color: #ccc;
+      }
+
+      /* When the radio button is checked, add a blue background */
+      .input-container input:checked~.checkmark {
+          background-color: #2196F3;
+      }
+
+      /* Create the indicator (the dot/circle - hidden when not checked) */
+      .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+      }
+
+      /* Show the indicator (dot/circle) when checked */
+      .input-container input:checked~.checkmark:after {
+          display: block;
+      }
+
+      /* Style the indicator (dot/circle) */
+      .input-container .checkmark:after {
+          top: 9px;
+          left: 9px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: white;
+      }
+      /*  Radio button style  */
+
+
+      @media (max-width:575px){
+     
+            .recharts-legend-wrapper {
+                /* position: relative !important; */
+                width: 100% !important;
+                height: auto !important;
+                /* bottom: 26px !important;
+                left: 3px !important; */
+              }
+              
+      }
+
+
+  
+

@@ -1,0 +1,283 @@
+#loginpage {
+    /* padding: 50px; */
+}
+
+.logo-wrapper img {
+        width: 450px;
+    }
+
+
+.loginWrapper{
+  background: #af4c7a;
+  height: 84%;
+  padding: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(85, 199, 251, 0.47)), color-stop(74%, rgba(249, 203, 71, .74)));
+background: linear-gradient(90deg, rgba(85, 199, 251, 0.47) 0%, rgb(249, 203, 71) 74%);
+}
+
+.logo-container{
+    display:flex;
+    height: 100vh ;
+}
+.loginBox {
+    background: #fff;
+    padding: 30px;
+    margin: 48px;
+}
+
+.login-title {
+    font-size: 24px;
+    /* color: #797474; */
+    color: #17a2b8;
+    font-weight: normal;
+}
+.loginForm{
+
+}
+.reset-alert {
+    width: 100%;
+    height: 70px;
+    padding: 6px 10px;
+    border-radius: 0px;
+    line-height: 20px;
+}
+
+.loginForm label{
+font-weight: normal;
+color: #12aae6;
+font-size: 17px;
+text-transform: uppercase;
+}
+
+
+.loginForm input {
+font-size: 14px;
+color: #797474;
+border: none;
+}
+    input.form-control {
+        border-radius: 0px;
+        /* font-size: 13px; */
+        font-weight: normal;
+       /*  color: #AEAEAE; */
+    }
+.loginForm input:focus {
+    outline: none;
+border: none;
+}
+.reset-alert  {
+    width: 100%;
+   height: 41px;
+   padding: 6px 10px;
+   border-radius: 0px;
+   line-height: 29px;
+}
+.login-alert{
+    /* width: 100%;
+    height: 41px;
+    padding: 6px 10px;
+    border-radius: 0px;
+    line-height: 29px; */
+    /* width: 100%;
+    height: 45px;
+    padding: 5px 14px;
+    border-radius: 0px;
+    line-height: 20px; */
+    width: 100%;
+    height: 42px;
+    padding: 5px 16px;
+    border-radius: 0px;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.resetpass-alert{
+    width: 100%;
+    height: 30px;
+    padding: 5px 16px;
+    border-radius: 0px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.reset-box-shadow {
+    background: #fff;
+    padding: 30px;
+    margin: 48px;
+    box-shadow: 1px 2px 3px 3px #EEE;
+}
+
+@media(max-width: 575px) {
+
+.logo-container {
+    height: auto;
+}
+.logo-wrapper {
+    width: 94%;
+}
+
+.logo-wrapper img {
+    width: 100%;
+    margin-top: 18px;
+    margin-bottom: 0px;
+}
+.loginWrapper {
+    height: 94%;
+}
+.loginBox {
+    background: #fff;
+    padding: 14px;
+    margin: 8px;
+}
+.login-title {
+    font-size: 22px;
+    color: #17a2b8;
+    font-weight: normal;
+    margin-top: 15px;
+}
+.reset-alert {
+    /* width: 100%;
+    height: 50px;
+    padding: 6px 10px;
+    border-radius: 0px;
+    line-height: 20px;
+    font-size: 13px; */
+    width: 100%;
+    height: 65px;
+    padding: 5px 1px;
+    border-radius: 0px;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+
+.reset-box-shadow {
+    background: #fff;
+    padding: 10px 5px 10px 5px;
+    margin: 10px;
+    /* box-shadow: 1px 2px 3px 3px #EEE; */
+   
+    box-shadow: 1px 1px 5px 0px #EEE;
+}
+
+}
+
+
+
+@media (min-width: 576px) and (max-width: 767px) { 
+    .logo-container {
+        height: auto;
+    }
+    .logo-wrapper {
+        width: 94%;
+    }
+    
+    .logo-wrapper img {
+        width: 100%;
+        margin-top: 18px;
+        margin-bottom: 0px;
+    }
+    .loginWrapper {
+        height: 94%;
+        width: 313px;
+    }
+    .loginBox {
+        background: #fff;
+        padding: 1px;
+        margin: 40px;
+    }
+    .reset-alert {
+                   
+        width: 100%;
+        height: 65px;
+        padding: 5px 1px;
+        border-radius: 0px;
+        line-height: 18px;
+        font-size: 13px;
+    }
+    .reset-box-shadow {
+        background: #fff;
+        padding: 10px 5px 10px 5px;
+        margin: 10px;
+        /* box-shadow: 1px 2px 3px 3px #EEE; */
+       
+        box-shadow: 1px 1px 5px 0px #EEE;
+    }
+            }
+
+            @media (min-width: 768px) and (max-width: 991px) { 
+                .logo-container {
+                    height: auto;
+                }
+                .logo-wrapper {
+                    width: 94%;
+                  
+                }
+                
+                .logo-wrapper img {
+                    width: 100%;
+                    margin-top: 18px;
+                    margin-bottom: 0px;
+                }
+                .loginWrapper {
+                    height: 94%;
+                    width:325px;
+                }
+                .loginBox {
+                    background: #fff;
+                    padding: 5px;
+                    margin: 30px;
+                
+                }
+                .reset-alert {
+                   
+                    width: 100%;
+                    height: 65px;
+                    padding: 5px 1px;
+                    border-radius: 0px;
+                    line-height: 18px;
+                    font-size: 13px;
+                }
+             
+             }
+
+            @media (min-width: 992px) and (max-width: 1199px) { 
+
+
+                .logo-container {
+                    height: auto;
+                }
+                .logo-wrapper {
+                    width: 94%;
+                  
+                }
+                
+                .logo-wrapper img {
+                    width: 100%;
+                    margin-top: 18px;
+                    margin-bottom: 0px;
+                }
+                .loginWrapper {
+                    height: 94%;
+                }
+                .loginBox {
+                    background: #fff;
+                    padding: 21px;
+                    margin: 40px;
+                
+                }
+                .reset-alert {
+                   
+                    width: 100%;
+                    height: 65px;
+                    padding: 5px 1px;
+                    border-radius: 0px;
+                    line-height: 18px;
+                    font-size: 14px;
+                }
+                
+            }

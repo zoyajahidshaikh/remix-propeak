@@ -1,0 +1,47 @@
+    /* .input-type {
+        position: relative;
+        width: 100%;
+        height: calc(2.25rem + 2px);
+        margin: 0;
+    } */
+
+    .btn-style {
+        margin-top: 28px;
+    }
+
+    .cursor-point {
+        cursor: pointer;
+    }
+
+    .drag-file {
+        border: dashed #337ab7;
+        /* marginTop: "10px",
+        marginLeft: "-65px" */
+    }
+    .icon{
+    font-size: 15px;
+    margin-left: 3px;
+    margin-right: 3px;
+    }
+
+   
+    /* layout.css Style */
+.document-upload-drop-zone {
+    height: 200px;
+    border-width: 2px;
+    margin-bottom: 20px;
+}
+
+/* skin.css Style*/
+.document-upload-drop-zone {
+    color: #ccc;
+    border-style: dashed;
+    border-color: #ccc;
+    line-height: 100px;
+    text-align: center
+}
+
+.document-upload-drop-zone.drop {
+    color: #222;
+    border-color: #222;
+}

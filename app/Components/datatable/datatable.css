@@ -1,0 +1,199 @@
+#datatable .toolbar {
+    display: inline-block;
+    font-size: 0.7em;
+    padding-bottom: 5px;
+    padding-left: 10px;
+      
+  }
+  
+  #datatable  .toolbar a, #datatable  .toolbar button {
+    margin-left: 1px;
+  }
+  
+ 
+  
+  #datatable  .data-table th {
+    /* background-color: #f2f0e4;
+    padding-left: 6px;
+    position: relative;
+    border: 1px solid #dadada;
+    text-align: left;
+    font-weight: bold;
+    line-height: 13px;
+    font-size: 12px;
+    color: #3a3a3a;
+    min-width: 75px;
+    max-width: 300px;
+    width: auto; */
+
+    background-color: #fff;
+    padding-left: 6px;
+    position: relative;
+    border: 1px solid #eee;
+    text-align: left;
+    font-weight: bold;
+    line-height: 15px;
+    font-size: 15px;
+    color: #777272;
+    min-width: 75px;
+    max-width: 300px;
+    width: auto;
+}
+
+
+
+#datatable .data-table  tr {
+      background-color: #fff;
+    padding-left: 6px;
+    position: relative;
+    border: 1px solid #e5e5e5;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.8em;
+    font-size: 12px;
+  }
+  #datatable  .errorRow tr {
+      background-color: #f58787;
+      background-color: #fff;
+    padding-left: 6px;
+    position: relative;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.6em;
+    font-size: 12px;
+  }
+  #datatable  .errorRow a, #datatable  .data-table .errorRow td {
+    /*color: red;*/
+    color: #fff;
+    /*color: #000;*/
+  }
+  
+  #datatable  .data-table td {
+    border: 1px solid #eee;
+    color: #212121;
+    vertical-align: middle;
+    font-weight: normal;
+padding: 2px 3px;
+  }
+  
+  #datatable  .col-resizer {
+    position: absolute;
+    width: 20px;
+    height:30px;
+    cursor: col-resize;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    user-select: none;
+  }
+  
+  
+@media(max-width: 650px) {
+  #datatable  .data-table th {
+    font-weight: bold;
+      line-height:13px;
+      font-size: 15px;
+    
+      width: 200px;
+  }
+
+
+  #datatable  .data-table td {
+    font-weight: normal;
+     width: 200px;
+   }
+
+   #datatable  .scroll {
+     height: 71vh;
+     overflow-y: auto;
+     margin-bottom: 25px;
+     /* overflow-x: scroll; */
+   }
+
+   /* #datatable   table tbody {
+    display: block;
+    overflow-y: initial;
+    overflow-x: initial;
+   } */
+
+
+}
+@media(max-width: 775px) {
+  #datatable  .data-table th {
+    font-weight: bold;
+      line-height:13px;
+      font-size: 15px;
+    
+      width: 200px;
+  }
+
+
+  #datatable  .data-table td {
+    font-weight: normal;
+     width: 200px;
+   }
+
+   #datatable  .scroll {
+     height: 71vh;
+     overflow-y: auto;
+     margin-bottom: 25px;
+     /* overflow-x: scroll; */
+   }
+
+   /* #datatable   table tbody {
+    display: block;
+    overflow-y: initial;
+    overflow-x: initial;
+   } */
+
+
+}
+#datatable  .rating {
+    border:none;
+    box-shadow: 2px 2px 2px grey;
+    background-color: lightgray;
+    vertical-align: middle;
+    line-height: 2em;
+  }
+  
+  #datatable  .data-table-caption {
+    padding: 15px 5px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  /* .table-container {
+    height: 10em;
+} */
+#datatable table {
+    display: flex;
+    flex-flow: column;
+    /* height: 100%; */
+    width: 100%;
+}
+#datatable  table thead {
+    /* head takes the height it requires, 
+    and it's not scaled when table is resized */
+    flex: 0 0 auto;
+    width: calc(100% - 0.5em);
+}
+#datatable  table tbody {
+  /* body takes all the remaining available space */
+  /* flex: 1 1 auto; */
+  display: block;
+  overflow-y: scroll;
+}
+#datatable  table tbody tr {
+  width: 100%;
+}
+#datatable table thead, table tbody tr {
+  display: table;
+  table-layout: fixed;
+}
+
+#datatable  table td a {
+  word-break: break-word;
+}

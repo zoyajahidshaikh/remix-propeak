@@ -1,0 +1,198 @@
+#small-calendar .calendar-container,
+#small-calendar .calendar,
+#small-calendar .calendar-header,
+#small-calendar td,
+#small-calendar tr {
+    padding: 0;
+    margin: 0;
+}
+
+#small-calendar .calendar-container {
+    /* border: 2px solid skyblue; */
+}
+
+#small-calendar .calendar {
+    background-color: white;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+#small-calendar .calendar thead {
+        border-top: 1px solid #7be3f1;
+        border-bottom: 1px solid #7be3f1;
+}
+
+#small-calendar .calendar-header {
+    /* border-bottom: 1px dashed skyblue; */
+    font-size: 1.6em;
+}
+
+#small-calendar .calendar-header td {
+    border-spacing: 0;
+    padding-left: 5px;
+    
+}
+
+#small-calendar .day,
+#small-calendar .empty-slot,
+#small-calendar .week-day {
+    text-align: center;
+    height: 40px;
+    cursor: pointer;
+    width: 38px;
+    height: 24px;
+    line-height: 24px;
+}
+
+#small-calendar .week-day {
+    font-size: 0.8em;
+    cursor: pointer;
+    width: 38px;
+    height: 24px;
+    line-height: 24px;
+}
+
+#small-calendar .day {
+    font-size: 0.8em;
+}
+
+#small-calendar .day {
+    /* cursor: pointer;
+    width: 24px;
+    height: 24px;
+    line-height: 24px; */
+    /* display: inline-block; */
+    cursor: pointer;
+    width: 38px;
+    height: 24px;
+    line-height: 24px;
+}
+
+#small-calendar .current-day {
+    background-color: #4285f4;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2%;
+    color: white;
+}
+
+#small-calendar .selected-day {
+    background-color: yellow;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2%;
+    color: black;
+}
+
+/* .month-popup {
+    position: absolute;
+    padding: 5px;
+    background: white;
+    border: 2px solid skyblue;
+} */
+
+#small-calendar .month-popup {
+    overflow-y: auto;
+    position: absolute;
+    padding: 5px;
+    background: white;
+    border: 2px solid skyblue;
+    height: 164px;
+}
+#small-calendar .month-popup div {
+    padding: 0;
+    font-size: 10px;
+}
+
+#small-calendar .nav-month {
+    position: absolute;
+    top: 30px;
+    font-size: 0.6em;
+    right: 3px;
+}
+#small-calendar table {
+    display: flex;
+    flex-flow: column;
+    /* height: 100%; */
+    width: 100%;
+}
+#small-calendar table thead {
+    /* head takes the height it requires, 
+    and it's not scaled when table is resized */
+    flex: 0 0 auto;
+    width: calc(100% - 0.5em);
+}
+#small-calendar table tbody {
+    /* body takes all the remaining available space */
+    /* flex: 1 1 auto; */
+    display: block;
+    /* overflow-y: scroll; */
+  }
+  #small-calendar table thead, #small-calendar table tbody tr {
+    display: table-row;
+    table-layout: fixed;
+}
+ 
+
+#small-calendar .editor-year {
+    max-width: 3.6em;
+}
+
+ .label-month,
+ .label-year {
+    font-size: 0.6em;
+}
+
+ .label-month {
+    cursor: pointer;
+}
+
+ .hide-calendar {
+    display: none;
+}
+
+ .input-display {
+    display: inline-block !important;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 10px;
+    z-index: inherit ;
+}
+
+ .input-cal
+{
+    width:85% !important;
+}
+ .btn-cal
+{
+       width: 15% !important;
+       /* height: 32px; */
+       background: #7be3f1;
+       border: 1px solid #cac5c5;
+       color: #FFF;
+}
+
+@media (min-width: 486px) and (max-width:575px) { 
+    .input-group {
+        width: 100%;
+        margin-bottom: 10px;
+        z-index: inherit ;
+    }
+    
+     .input-cal
+    {
+        width:88% !important;
+    }
+     .btn-cal
+    {
+           width: 12% !important;
+           /* height: 32px; */
+           background: #7be3f1;
+           border: 1px solid #cac5c5;
+           color: #FFF;
+    }
+}

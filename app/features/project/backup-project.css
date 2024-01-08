@@ -1,0 +1,649 @@
+body, table {
+    /* font-family: 'Arial'; */
+  }
+a {
+    color : #000;
+}
+
+/*.project-header a:hover {
+    font-size: 14px;
+}*/
+  .flexWrapper {
+      display: flex;
+      font-size: 10px;
+      margin-top: 5px;
+  }
+
+  
+
+  .flexWrapper-inner {
+      display: flex;
+      flex-direction: column;
+      font-size: 10px;
+      /* padding: 10px 0px; */
+      text-align: center;
+      margin: auto;
+      padding: 2px;
+      /* border: 1px solid #EEE; */
+      color:#514d4d;
+      align-items: center;
+  }
+
+  .flexWrapper-inner span:first-child {
+    font-size: 12px;
+    /* background: #cbd1d4; */
+    padding: 5px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: #514d4d;
+    font-weight: bold;
+  } 
+
+  a.assignees {
+    color: #000;
+    font-size: 12px;
+}
+
+.project-total {
+    font-size: 22px;
+}
+
+.user-total {
+    font-size: 22px;
+}
+
+.company-total {
+    font-size: 22px;
+}
+.title1 {
+    font-size: 22px;
+
+}
+
+.project-typeahead{
+    position: absolute;
+     left: 16px;
+      top: 68px;
+       width: 90%; 
+       border: 1px solid #ccc4c4;
+    height: 100px; 
+    overflow-y: auto; 
+    background: #fff; 
+    z-index: 50
+}
+.project-header {
+  
+    position: relative;
+    height: 41px;
+    overflow: hidden;
+    padding: 4px 0 10px;
+
+}
+.project-header > a {
+    display: inline-block;
+    width: 90%;
+    font-size: 13px;
+}
+
+ .project-category {
+    position: relative;
+    width: 25%;
+    float: left;
+    border: 1px lightgray dashed;
+    padding: 10px;
+    background-color: SNOW;
+    overflow: auto;
+    height: 450px;
+    overflow-y: auto;
+}
+.userlinks {
+    color: #151414;
+    font-family: "Arial";
+    font-size: 11px;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+    position: absolute;
+    right: -2px;
+    top: -27px;
+    padding: 3px;
+}
+
+.project-header .titlelink {
+ color: #7c7070;
+    font-family: "Arial";
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: normal;
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-left: 5px;
+   margin-right: 22px;
+}
+
+.project-header .links {
+ color: #7c7070;
+    font-family: "Arial";
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: normal;
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 20px;
+}
+
+
+/* ******************************************************************************************** */
+/*  project-icons UI - START */
+/* ******************************************************************************************** */
+
+.project-icons-wrapper {
+    width: 16px;
+    display: inline-block;
+    height: 28px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    transition:width 0.25s;
+    -webkit-transition:width .25s;
+    -moz-transition: width 0.25s;
+}
+
+
+.project-icons {
+    display: none;
+    position: absolute;
+    width: 10px;
+    height: 41px;
+    right: 14px;
+    top: 1px;
+    /* background: #f8f9fa; */
+    background: #EEE;
+    padding: 5px;
+    transition:width 0.25s;
+    -webkit-transition:width .25s;
+    -moz-transition: width 0.25s;
+ }
+
+
+.project-icons-wrapper:hover .project-icons {
+    display: flex;
+    justify-content: space-around;
+    right: 20px;
+    width: 250px;
+    max-width: 280px;
+   
+ }
+
+.project-icons-wrapper:before {
+    content: '...';
+    /* content: "\2770"; */
+    text-align: center;
+    font-size: 16px;
+    height: 24px;
+    display: inline-block;
+ }
+ 
+
+ .project-icons-wrapper:hover:before {
+     /* content: "\2770"; */
+     content: "  ";
+     text-align: center;
+     font-weight: bold;
+ }
+
+ 
+
+ .project-icons a {
+    background-color: #EEE;
+    height: 30px;
+    width: 40px;
+    text-align: center;
+    border-right: 1px dotted #c5c8cc;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+.project-icons a:hover { 
+    background-color: #fff;
+    
+}
+
+.project-icons a:last-child {
+    border-right: 0px solid #e6e6e6;
+}
+
+
+
+.project-list li:nth-child(odd) .project-icons-wrapper:before {
+    color: orange;
+   
+}
+
+
+.project-list li:nth-child(even) .project-icons-wrapper:before {
+    color:#09d2eb;
+   
+}
+
+
+/* ******************************************************************************************** */
+/*  project-icons UI - END */
+/* ******************************************************************************************** */
+
+
+.project-list li.project-nogroup {
+     height: 114px;
+     margin-bottom: 30px;
+}
+
+.project-border {
+   height: 114px;
+    max-height: 114px;
+}
+
+
+.project-list li:nth-child(even) .fas.fa-users, .project-list li:nth-child(even) .fas.fa-user, .project-list li:nth-child(even) .user-no {
+ color: #09d2eb;
+}
+
+.project-list li:nth-child(odd) .fas.fa-users, .project-list li:nth-child(odd) .fas.fa-user, .project-list li:nth-child(odd) .user-no  {
+   color:orange;
+   /* text-shadow: -2px 1px 5px #bdb2b2; */
+}
+
+.project-list li:nth-child(odd) .project-header a:hover {
+     color:orange;
+     /* text-shadow: -2px 1px 5px #bdb2b2; */
+}
+
+
+.project-list li:nth-child(even) .project-header a:hover {
+    color: #09d2eb;
+}
+
+.project-active {
+    height: 12px;
+    width: 12px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+.project-body {
+  font-size: inherit;
+  margin-left: 5px;
+        position: relative;
+
+}
+
+.project-footer {
+  position: absolute;
+  bottom: 0;
+  text-transform: lowercase;
+  font-size: 0.7em;
+}
+
+
+/* ******************************************************************************************** */
+/*  user - project-icons UI - START */
+/* ******************************************************************************************** */
+
+
+
+.user-project-icons {
+    display: none;
+    position: absolute;
+    width: 10px;
+    height: 41px;
+    right: 17px;
+    top: 1px;
+    /* background: #f8f9fa; */
+    background: #EEE;
+    padding: 5px;
+    transition:width 0.25s;
+    -webkit-transition:width .25s;
+    -moz-transition: width 0.25s;
+ }
+
+
+.project-icons-wrapper:hover .user-project-icons {
+    display: flex;
+    justify-content: space-around;
+    right: 16px;
+    /* right: 20px; */
+    min-width: 40px;
+    width: auto;
+   
+ }
+ 
+
+ .user-project-icons a {
+    background-color: #EEE;
+    height: 30px;
+    width: 40px;
+    text-align: center;
+    border-right: 1px dotted #c5c8cc;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-align: center;
+    align-items: center;
+ 
+}
+
+
+.user-project-icons a:hover { 
+    background-color: #fff;
+}
+
+.user-project-icons a:last-child {
+    border-right: 0px solid #e6e6e6;
+}
+
+
+
+/* ******************************************************************************************** */
+/*  user project-icons UI - END */
+/* ******************************************************************************************** */
+
+
+
+/* Project Add & Edit form  - Start */
+
+.nav-tabs {
+  border-bottom: 0px solid #03A9F4;
+}
+
+.nav-tabs>li>a {
+    line-height: 2;
+    border: 0px solid transparent;
+    border-radius: 0px 0px 0 0;
+    padding: 8px 20px 5px;
+    font-size: 13px;
+    color: #867f7f;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #826d6d;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-bottom: 3px solid #ffffff;
+    background: #fff;
+    border-top: 2px solid orange;
+    font-weight: bold;
+}
+
+
+.user-tags {
+  display: inline-block;
+    background-color: #e0fff6;
+    font-size: 10px;
+    border: 1px solid #eee;
+    padding: 2px 5px;
+    cursor: pointer;
+    margin-right: 3px;
+    margin-bottom: 2px;
+    border-radius: 12px;
+}
+.alert-success {
+    color: #040404;
+    border: 1px solid #a3ffb9;
+    border-color: #11e240;
+    padding: 3px 10px;
+    border-left: 5px solid #0ada0a;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: #fff;
+}
+
+.fas {
+    cursor: pointer;
+}
+/* Project Add & Edit form  - Start */
+
+
+ @media (max-width : 480px) {
+        .nav-tabs>li>a {
+            padding: 5px 10px 5px;
+            font-size: 12px;
+        }
+                
+        .project-total {
+            font-size: 18px;
+        }
+
+
+/* ******************************************************************************************** */
+/*  project-icons UI - START */
+/* ******************************************************************************************** */
+
+.project-icons-wrapper {
+    width: 16px;
+    display: inline-block;
+    height: 28px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    transition:width 0.25s;
+    -webkit-transition:width .25s;
+    -moz-transition: width 0.25s;
+}
+
+
+.project-icons {
+    display: none;
+    position: absolute;
+    width: 10px;
+    height: 41px;
+    right: 14px;
+    top: 1px;
+    /* background: #f8f9fa; */
+    background: #EEE;
+    padding: 5px;
+    transition:width 0.25s;
+    -webkit-transition:width .25s;
+    -moz-transition: width 0.25s;
+ }
+
+
+.project-icons-wrapper:hover .project-icons {
+    display: flex;
+    justify-content: space-around;
+    right: 20px;
+    width: 250px;
+    max-width: 280px;
+   
+ }
+
+.project-icons-wrapper:before {
+    content: '...';
+    /* content: "\2770"; */
+    text-align: center;
+    font-size: 16px;
+    height: 24px;
+    display: inline-block;
+ }
+ 
+
+ .project-icons-wrapper:hover:before {
+     /* content: "\2770"; */
+     content: "  ";
+     text-align: center;
+     font-weight: bold;
+ }
+
+ 
+
+ .project-icons a {
+    background-color: #EEE;
+    height: 30px;
+    width: 40px;
+    text-align: center;
+    border-right: 1px dotted #c5c8cc;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+.project-icons a:hover { 
+    background-color: #fff;
+}
+.project-icons a:last-child {
+    border-right: 0px solid #e6e6e6;
+}
+
+
+.project-list li:nth-child(odd) .project-icons-wrapper:before {
+    color: orange;
+   
+}
+
+.project-list li:nth-child(even) .project-icons-wrapper:before {
+    color:#09d2eb;
+   
+}
+
+
+.project-icons-wrapper:hover .user-project-icons {
+    display: flex;
+    justify-content: space-around;
+    /* right: 16px; */
+    right: 20px;
+    min-width: 40px;
+    width: auto;
+   
+ }
+
+
+/* ******************************************************************************************** */
+/*  project-icons UI - END */
+/* ******************************************************************************************** */
+
+
+
+
+
+}
+
+/*==========  Mobile First Method  ==========*/
+
+
+    /* Custom, iPhone Retina */ 
+    @media (min-width : 320px) {
+     
+ .project {
+            width: 99%;
+        }
+        .project-nogroup {
+            width: 99%;
+        }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media (min-width : 480px) {
+
+          .project {
+            width: 95%;
+        }
+        .project-nogroup {
+            width: 45%;
+        }
+
+    }
+
+ 
+    /* Small Devices, Tablets */
+    @media (min-width : 768px) {
+     
+         .project {
+            width: 95%;
+        }
+
+        .project-nogroup {
+            width: 48%;
+        }
+
+    }
+
+
+
+ /* Medium Devices, Desktops */
+    @media (min-width : 992px) {
+      
+          .project {
+            width: 95%;
+        }
+        .project-nogroup {
+            width: 31%;
+        }
+      
+
+    }
+
+
+
+
+    /* Large Devices, Wide Screens */
+    @media  (min-width : 1200px) {
+        body {
+            
+            /* background: rgb(238, 133, 34); */
+        }
+        .project {
+            width: 97%;
+        }
+           .project-nogroup {
+            width: 24%;
+        }
+
+    }
+
+    .project-nogroup:nth-child(even) .glyphicon-user {
+        color: #09d2eb;
+    } 
+    
+    .project-nogroup:nth-child(odd) .glyphicon-user {
+        color:orange;
+    } 
+
+    /*==========  Mobile First Method For No group ==========*/
+
+
+    @media  (min-width : 768px) and (max-width: 1024px) {
+       /* body {
+        background : pink;
+       } */
+
+       .project-border {
+            height: 138px;
+            max-height: 138px;
+        }
+
+
+    }
+    
+   
+  
+
+
+

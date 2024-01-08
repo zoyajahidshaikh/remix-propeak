@@ -1,0 +1,294 @@
+div.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+    height: 65vh;
+    overflow-y: scroll;
+}
+
+.category123{
+    border: 1px solid #dee2e6;
+    width: 220px;
+    height: 77px;
+    /* border-radius: 50%; */
+    padding: 10px;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #fff;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.category-list-group{
+    /* display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: start;
+    -webkit-justify-content: center;
+    justify-content: start;
+    flex-wrap: wrap;
+ 
+    background: #f8f9fb;
+     border: 1px solid #dbddde;
+     padding: 10px;
+     margin-top: 10px;
+     height: 65vh;
+     overflow-y: auto;
+         align-content: baseline; */
+         display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: start;
+    align-items: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* background: #e4dccc; */
+    background: #f8f9fb;
+    border: 1px solid #dbddde;
+    padding: 10px;
+    margin-top: 10px;
+    height: 65vh;
+    overflow-y: auto;
+    -ms-flex-line-pack: baseline;
+    align-content: baseline;
+}
+.ccategory {
+    border: 1px solid #dee2e6;
+    width: 220px;
+    height: 77px;
+    /* border-radius: 50%; */
+    padding: 10px;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #fff;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.category-name {
+    /* height: 27px; */
+    background: rgb(250, 206, 131);
+    padding: 2px 10px;
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    /* cursor: pointer; */
+}
+
+body, table {
+    /* font-family: 'Arial'; */
+  }
+
+a{ 
+cursor: pointer; }
+
+
+.category-total {
+    font-size: 22px;
+}
+.category-list-wrapper {
+     height: 70vh;
+    background: #e5ecec;
+    padding: 10px;
+    overflow-y: auto;
+}
+ul.categoryList {
+    column-count: 1;
+    list-style: none;
+}
+
+ul.categoryList  li {
+    border-bottom: 1px solid lightgrey;
+    margin-right: 5px;
+}
+
+.category {
+    border-radius: 4px;
+}
+
+@media (max-width : 480px) {
+     
+    .category-total {
+        font-size: 18px;
+    }
+    .category{
+        width: 100%;
+        min-height: 25vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 5px;
+        background-color: snow;
+        height: 66vh;
+        max-height: 70vh;
+        display: inline-block;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        border: 1px solid #EEE;
+        margin: 5px;
+    }
+
+
+}
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media (min-width : 320px) {
+ 
+
+        .category123{
+            width: 99%;
+        }
+        .category{
+            width: 100%;
+            min-height: 25vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 5px;
+            background-color: snow;
+            height: 66vh;
+            max-height: 70vh;
+            display: inline-block;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            border: 1px solid #EEE;
+            margin: 5px;
+        }
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media (min-width : 480px) {
+  
+        .category123{
+            width: 45%;
+        }
+        .category{
+            width: 310px;
+            min-height: 25vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 5px;
+            background-color: snow;
+            height: 66vh;
+            max-height: 70vh;
+            display: inline-block;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            border: 1px solid #EEE;
+            margin: 5px;
+        }
+
+
+    }
+
+    /* Small Devices, Tablets */
+    @media (min-width : 768px) {
+        body {
+            /* background: greenyellow; */
+
+        }
+
+        .category123{
+            width: 31%;
+        }
+        .category{
+            width: 310px;
+            min-height: 25vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 5px;
+            background-color: snow;
+            height: 66vh;
+            max-height: 70vh;
+            display: inline-block;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            border: 1px solid #EEE;
+            margin: 5px;
+        }
+
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media (min-width : 992px) {
+        body {
+            
+            /* background: rgb(209, 50, 50); */
+        }
+        .category123{
+            width: 23%;
+        }
+
+        .category{
+            width: 310px;
+            min-height: 25vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 5px;
+            background-color: snow;
+            height: 66vh;
+            max-height: 70vh;
+            display: inline-block;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            border: 1px solid #EEE;
+            margin: 5px;
+        }
+
+      
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media  (min-width : 1200px) {
+        body {
+            
+            /* background: rgb(238, 133, 34); */
+        }
+        .category123{
+            width: 24%;
+        }
+
+        .category{
+            width: 310px;
+            min-height: 25vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 5px;
+            background-color: snow;
+            height: 66vh;
+            max-height: 70vh;
+            display: inline-block;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            border: 1px solid #EEE;
+            margin: 5px;
+        }
+
+
+    }
+
+
